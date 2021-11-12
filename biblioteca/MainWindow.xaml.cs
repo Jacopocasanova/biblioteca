@@ -20,9 +20,25 @@ namespace biblioteca
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<string> listaLibri = new List<string>();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_aggiungiLibro_Click(object sender, RoutedEventArgs e)
+        {
+            string libro;
+            lst_libri_.Items.Clear();
+            libro = txt_nomeLibro.Text;
+            listaLibri.Add(libro);
+
+            foreach (string libro1 in listaLibri)
+            {
+               
+                lst_libri_.Items.Add(libro1);
+
+            }
         }
     }
 }

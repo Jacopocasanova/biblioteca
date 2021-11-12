@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="btn_aggiungiLibro" Content="aggiungi libro" HorizontalAlignment="Left" Margin="68,93,0,0" VerticalAlignment="Top" Width="84" Click="btn_aggiungiLibro_Click"/>
+        <TextBox x:Name="txt_nomeLibro" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Margin="47,39,0,0"/>
+        <ListBox x:Name="lst_libri_" HorizontalAlignment="Left" Height="205" VerticalAlignment="Top" Width="176" Margin="266,39,0,0"/>
+
     </Grid>
 </Window>
